@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+body {
+  background-color: blueviolet;
+}
+.leftHeader {
+  float: right;
+  font-weight: 400;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+button {
+  border-radius: 12px;
+  width: 100px;
+  height: 50px;
+  float: left;
+}
+input {
+  width: 200px;
+  height: 100px;
+  background-color: rgb(167, 160, 160);
+  border-radius: 12px;
+  border: none;
+  margin-bottom: 20px;
+  font-size: 50px;
+  text-align: center;
+}
+input::after {
+  border: none;
+}
+.guessParagraph {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+.questionNumbers {
+  display: flex;
+  align-items: center;
+}
+.questionNumberIcon {
+  display: flex;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+}
+.questionNumberLine {
+  flex: 1 0 auto;
+  height: 0;
+  border-top: 1px solid black;
+}
+.display {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.display_1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.display_2 {
+  font-size: 30px;
+  margin-left: 10px;
+}
+.score {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
