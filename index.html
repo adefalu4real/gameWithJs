@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guess my number</title>
     <link rel="stylesheet" href="game.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="leftHeader"><p>(Between 1 and 20)</p></div>
-    <button class="again"><h3>Again</h3></button>
+    <div class="top">
+      <button class="again"><h3>Again</h3></button>
+      <p>(Between 1 and 20)</p>
+    </div>
+
     <div class="guessParagraph"><h2>Guess my Number!</h2></div>
     <main class="questionNumbers">
       <div class="questionNumberLine"></div>
-      <div class="questionNumberIcon" id="number">2</div>
+      <div class="questionNumberIcon" id="number">?</div>
       <div class="questionNumberLine"></div>
     </main>
     <div class="display">
       <div class="display_1">
         <div class="guess">
-          <input type="text" id="guess" />
+          <input type="number" id="guess" />
         </div>
-        <button class="click" type="button">Click</button>
+        <button class="click" type="button"><h3>Check</h3></button>
       </div>
       <div class="display_2">
-        <p class="message" id="message">Stat guessing.....</p>
-        <p class="score">🤳 Score:0</p>
-        <p class="highScore">🥇 High Score:0</p>
+        <p class="message" id="message">🎢 Stat guessing.....</p>
+        <p class="scoreP">💯 Score: <span class="score">0</span></p>
+        <p>🥇 High Score: <span id="highScore">0</span></p>
       </div>
     </div>
     <script src="index.js"></script>
