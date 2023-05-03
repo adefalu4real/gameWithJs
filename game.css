@@ -6,7 +6,7 @@
   outline: none;
 }
 body {
-  background-color: rgb(7, 25, 64);
+  background-color: rgb(5, 125, 136);
   font-family: "Press Start 2P", cursive;
   color: rgb(230, 228, 227);
   margin: 10px;
@@ -14,7 +14,7 @@ body {
 .top {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 button {
@@ -88,16 +88,27 @@ input::after {
   margin-top: 30px;
   margin-bottom: 20px;
 }
+body .name {
+  font-weight: 400;
+  margin-top: 20px;
+  text-align: center;
+}
 @media screen and (max-width: 768px) {
   .guessParagraph {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 50px;
   }
 
   .display {
     flex-direction: column;
   }
   .display_2 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+  }
+  .bet {
+    margin-left: 20px;
+    font-size: 18px;
   }
 }
